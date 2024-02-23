@@ -44,4 +44,12 @@ function submitForm() {
     
     document.body.appendChild(errorDiv);
   }
+
+ const form = document.getElementById('form-container');
+
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); // 
   
+  submitForm();
+})
