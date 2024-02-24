@@ -87,6 +87,7 @@ button {
     background-color: #b0994f;
     border-radius: 90px;
 }
+
 .congratulations-message {
     background-image: url(./assets/response_image.png);
     position: absolute;
@@ -97,6 +98,8 @@ button {
     z-index: 9999; /* Ensure it appears above other content */
     max-width: 80%;
     margin: auto;
+    width: 398px;
+    height: 197px;
 }
 
 /* Blur effect */
@@ -104,10 +107,19 @@ button {
     filter: blur(4px); 
   }
   
+  /* Congratulations message styles */
+  .congratulations-message {
+    position: absolute;
+    top: 20px; /* Adjust the top position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 9999; /* Ensure it appears above other content */
+    color: #f5ec42;
+  }
   
-  
-  
-
 
 @media only screen and (min-width: 600px) {
     .container, .congratulations-message {
